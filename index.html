@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <title>Srikhar's Portfolio</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a>
+            <h1>
+              <span class="fa-solid fa-terminal"></span>
+              <span>Srikhar Shashi</span>
+            </h1>
+          </a>
+        </li>
+        <li><a href="">Projects</a></li>
+        <li><a href="">About </a></li>
+        <li><a href="">Contact </a></li>
+        <li>
+          <a href=""><i class="fab fa-linkedin-in"></i> </a>
+        </li>
+        <li>
+          <a href=""><i class="fa-brands fa-github"></i></a>
+        </li>
+        <li><a href="" class="resume_button">Resume</a></li>
+      </ul>
+    </nav>
+    <section id="intro">
+      <p class="name">
+        Hi, my name is
+        <span>Srikhar Shashi.</span>
+      </p>
+
+      <h2>I develop web applications.</h2>
+
+      <p>
+        I'm a student and an engineer specializing in Backend Development and
+        Flutter Development.
+      </p>
+
+      <p>
+        Currently, I'm a student at
+        <a href="www.ngit.ac.in">NGIT</a>
+      </p>
+    </section>
+    <div class="gradient"></div>
+
+    <div class="section-blue">
+      <section id="projects">
+        <h2>Projects I'm proud of</h2>
+        <article>
+          <div class="text">
+            <a
+              href="https://github.com/srikharshashi/trash-detection-docs"
+              target="_blank"
+              ><h3>
+                <i class="fa-brands fa-github"></i>Trash Detection and Reporting
+                using YOLOv5 and Drone Kit
+              </h3></a
+            >
+            <ul class="para">
+              <li>
+                The Trash Detection and Reporting project aims to automate the<b>
+                  evaluation of sanitation and cleaning in large areas</b
+                >
+                without manual inspection.
+              </li>
+              <li>
+                Aerial Images captured via a drone are then inferred using a
+                <b>custom trained YOLOv5 model</b>
+              </li>
+              <li>
+                When the threshold is exceeded, authorities receive alerts
+                through a <b> ServiceNow Incident</b>.
+              </li>
+              <li>
+                The <b>images are stored in Amazon S3</b> with references in the
+                database for easy retrieval.
+              </li>
+              <li>
+                The project includes a <b>web app</b> for viewing the images,
+                and a <b>mobile app called Drone Command</b> to control the
+                drone's missions.
+              </li>
+              <li>
+                Additionally,
+                <b
+                  >a Trash Detection Client performs GPU-enabled deep-learning
+                  inference</b
+                >
+                updates the database with the results.
+              </li>
+              <li>
+                A backend server with MongoDB and Express.js supports data
+                management and <b>websocket based drone-control alogrithm</b>
+              </li>
+              <li>
+                All the hosting is done on AWS using a basic<b>
+                  EC2 instance and an S3 bucket with MongoDB Atlas for DB
+                  Hosting.</b
+                >
+              </li>
+            </ul>
+
+            <h4>Tech Stack</h4>
+            <ul class="tech-stack">
+              <li><i class="fa-brands fa-node-js" title="NodeJS"></i></li>
+              <li><i class="fa-brands fa-aws" title="AWS"></i></li>
+              <li><i class="fa-brands fa-react" title="React"></i></li>
+              <li>
+                <img
+                  src="./img/flutter.png"
+                  alt="Flutter"
+                  title="Flutter"
+                  class="tech-stack-img flutter-icon"
+                />
+              </li>
+              <li>
+                <img
+                  src="./img/mongodb.svg"
+                  alt="MongoDB"
+                  title="MongoDB"
+                  class="mongo-icon tech-stack-img"
+                />
+              </li>
+              <li>
+                <img
+                  src="./img/drone.png"
+                  alt="DroneKit"
+                  title="DroneKit"
+                  class="drone-icon tech-stack-img"
+                />
+              </li>
+              <li>
+                <img
+                  src="./img/pytorch-icon.svg"
+                  alt="PyTorch"
+                  title="PyTorch"
+                  class="torch-icon tech-stack-img"
+                />
+              </li>
+              <li>
+                <img
+                  src="./img/websocket.png"
+                  alt="PyTorch"
+                  title="WebSockets"
+                  class="socket-icon tech-stack-img"
+                />
+              </li>
+            </ul>
+          </div>
+
+          <img
+            src="https://images.unsplash.com/photo-1473968512647-3e447244af8f"
+            class="project-image"
+          />
+        </article>
+        <article class="reverse">
+          <div class="text">
+            <a
+              href="https://github.com/srikharshashi/sih2022-docs"
+              target="_blank"
+              ><h3>
+                <i class="fa-brands fa-github"></i>Intelligent Crime Reporting
+                and Intervention System
+              </h3></a
+            >
+            <ul class="para">
+              <li>
+                The system allows citizens to
+                <b>anonymously report crimes</b> through a mobile app, providing
+                media evidence and exact location.
+              </li>
+              <li>
+                <b>The Patrol App</b> enables authorities to respond quickly,
+                with a maximum of five cases per patrol authority scheduled
+                using a <b>queue based on priority.</b>
+              </li>
+              <li>
+                The backend employs
+                <b>ML models for face detection and NLP crime categorization</b>
+                calculating a crime score for case prioritization.
+              </li>
+              <li>
+                An Admin App provides live case updates, location-wise
+                statistics, and a
+                <b>centralized view for higher authorities.</b>
+              </li>
+              <li>
+                The system incentivizes reporters with crypto tokens using
+                <b>ERC-20 based smart contracts</b>
+              </li>
+            </ul>
+
+            <h4>Tech Stack</h4>
+            <ul class="tech-stack">
+              <li><i class="fa-brands fa-node-js" title="NodeJS"></i></li>
+              <li><i class="fa-brands fa-aws" title="AWS"></i></li>
+              <li><i class="fa-brands fa-react" title="React"></i></li>
+              <li>
+                <img
+                  src="./img/flutter.png"
+                  alt="Flutter"
+                  title="Flutter"
+                  class="tech-stack-img flutter-icon"
+                />
+              </li>
+              <li>
+                <img
+                  src="./img/mongodb.svg"
+                  alt="MongoDB"
+                  title="MongoDB"
+                  class="mongo-icon tech-stack-img"
+                />
+              </li>
+              <li>
+                <img
+                  src="./img/azure.png"
+                  alt="Azure Face Detection"
+                  title="Azure Face Detection"
+                  class="drone-icon tech-stack-img"
+                />
+              </li>
+              <li>
+                <img
+                  src="./img/flask.png"
+                  alt="Flask"
+                  title="Flask"
+                  class="torch-icon tech-stack-img"
+                />
+              </li>
+              <li>
+                <img
+                  src="./img/websocket.png"
+                  alt="WebSockets"
+                  title="WebSockets"
+                  class="socket-icon tech-stack-img"
+                />
+              </li>
+            </ul>
+          </div>
+
+          <img
+            src="https://user-images.githubusercontent.com/37980605/179389499-5d3868db-8136-41ef-b578-35c872375798.png"
+            class="project-image"
+          />
+        </article>
+        <article>
+          <div class="text">
+            <a
+              href="https://github.com/srikharshashi/trash-detection-docs"
+              target="_blank"
+              ><h3>
+                <i class="fa-brands fa-github"></i>Trash Detection and Reporting
+                using YOLOv5 and Drone Kit
+              </h3></a
+            >
+            <ul class="para">
+              <li>
+                The Trash Detection and Reporting project aims to automate the<b>
+                  evaluation of sanitation and cleaning in large areas</b
+                >
+                without manual inspection.
+              </li>
+              <li>
+                <b
+                  >Utilizing a drone to capture aerial images, a custom YOLOv5
+                  model detects trash in the images</b
+                >.
+              </li>
+              <li>
+                When the threshold is exceeded, authorities receive alerts
+                through a ServiceNow Incident.
+              </li>
+              <li>
+                The images are stored in Amazon S3 with references in the
+                database for easy retrieval.
+              </li>
+              <li>
+                The project includes a web app for viewing the images, and a
+                mobile app called Drone Command to control the drone's missions.
+              </li>
+              <li>
+                Additionally, a Trash Detection Client performs GPU-enabled
+                trash detection and updates the database with the results.
+              </li>
+              <li>
+                A backend server with MongoDB and Express.js supports data
+                management, while a React web application allows users to view
+                the inferred images.
+              </li>
+              <li>
+                All the hosting is done on AWS using a basic EC2 instance and an
+                S3 bucket with MongoDB Atlas for DB Hosting.
+              </li>
+            </ul>
+
+            <h4>Tech Stack</h4>
+            <ul class="tech-stack">
+              <li><i class="fa-brands fa-node-js" title="NodeJS"></i></li>
+              <li><i class="fa-brands fa-aws" title="AWS"></i></li>
+              <li><i class="fa-brands fa-react" title="React"></i></li>
+              <li>
+                <img
+                  src="./img/flutter.png"
+                  alt="Flutter"
+                  title="Flutter"
+                  class="tech-stack-img flutter-icon"
+                />
+              </li>
+              <li>
+                <img
+                  src="./img/mongodb.svg"
+                  alt="MongoDB"
+                  title="MongoDB"
+                  class="mongo-icon tech-stack-img"
+                />
+              </li>
+              <li>
+                <img
+                  src="./img/drone.png"
+                  alt="DroneKit"
+                  title="DroneKit"
+                  class="drone-icon tech-stack-img"
+                />
+              </li>
+              <li>
+                <img
+                  src="./img/pytorch-icon.svg"
+                  alt="PyTorch"
+                  title="PyTorch"
+                  class="torch-icon tech-stack-img"
+                />
+              </li>
+              <li>
+                <img
+                  src="./img/websocket.png"
+                  alt="PyTorch"
+                  title="WebSockets"
+                  class="socket-icon tech-stack-img"
+                />
+              </li>
+            </ul>
+          </div>
+
+          <img
+            src="https://images.unsplash.com/photo-1473968512647-3e447244af8f"
+            class="project-image"
+          />
+        </article>
+      </section>
+    </div>
+    <div class="gradient"></div>
+    <div class="section-plum">
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <p>You can contact me at the give address</p>
+        <a href="mailto:dasojusrikhar@gmail.com" class="resume_button"
+          >Email Me</a
+        >
+      </section>
+    </div>
+    <div class="gradient"></div>
+    <footer>
+      <h2>Srikhar Shashi &middot; Developer</h2>
+
+      <i class="fa-brands fa-linkedin-in"></i>
+      <i class="fa-brands fa-github"></i> <i class="fa-regular fa-envelope"></i>
+
+      <p>&copy; 2023 Srikhar Shashi. All rights reserved.</p>
+      <p>Made with ❤ by Srikhar Shashi</p>
+    </footer>
+  </body>
+</html>
